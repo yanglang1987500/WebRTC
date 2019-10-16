@@ -1,0 +1,68 @@
+{
+  "extends": [
+    "tslint-react",
+    "tslint-config-airbnb"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "src/typings/*"
+    ]
+  },
+  "rules": {
+    "quotemark": [
+      false
+    ],
+    "no-console": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "typedef-whitespace": false,
+    "whitespace": [
+      true,
+      "check-branch", // 19.3
+      "check-decl", // 19.4
+      "check-operate", // 19.4
+      "check-preblock" // 19.2
+    ],
+    "eofline": false,
+    "max-line-length": [
+      true,
+      150
+    ],
+    "no-trailing-whitespace": [
+      true,
+      "ignore-blank-lines",
+      "ignore-comments"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "ignore",
+        "singleline": "ignore"
+      }
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "object-literal-shorthand": false,
+    "import-name": false,
+    "align": false,
+    "ter-arrow-parens": [
+      true,
+      "as-needed",
+      {
+        "requireForBlockBody": false
+      }
+    ],
+    "jsx-no-multiline-js": false,
+    "jsx-wrap-multiline": false,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "no-this-assignment": false
+  }
+}

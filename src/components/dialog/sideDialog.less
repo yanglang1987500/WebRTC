@@ -1,0 +1,137 @@
+
+
+@prefixCls: ui-side-dialog;
+@duration: 200ms;
+@animate: ease;
+.@{prefixCls} {
+  position: fixed;
+  background: #fff;
+  transition: all ease .2s;
+  z-index: 1050;
+  transform: translate3d(0, 0, 0);
+  &-left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  &-right {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.5);
+  }
+  &-top {
+    left: 0;
+    top: 0;
+    right: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,.5);
+  }
+  &-bottom {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: -5px 0 15px rgba(0,0,0,.5);
+  }
+  &-wrapper{
+    padding: 15px;
+  }
+  &-hidden{
+    display: none;
+  }
+  &-fr {
+    float:right;
+  }
+  &-header{
+    margin-bottom: 20px;
+    &>i {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      cursor: pointer;
+      &:hover{
+        opacity: .8;
+      }
+    }
+    &>h3 {
+      font-size: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+
+  /*----- animation ------*/
+
+  &-left-enter {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  &-left-enter&-left-enter-active  {
+    transform: translate3d(0, 0, 0);
+    transition: all @duration @animate;
+  }
+
+  &-left-leave&-left-leave-active {
+    transform: translate3d(-100%, 0, 0);
+    transition: all @duration @animate;
+  }
+
+
+
+
+  &-right-enter {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  &-right-enter&-right-enter-active  {
+    transform: translate3d(0, 0, 0);
+    transition: all @duration @animate;
+  }
+
+  &-right-leave&-right-leave-active {
+    transform: translate3d(100%, 0, 0);
+    transition: all @duration @animate;
+  }
+
+
+  &-top-enter {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &-top-enter&-top-enter-active {
+    transform: translate3d(0, 0, 0);
+    transition: all @duration @animate;
+  }
+
+  &-top-leave&-top-leave-active {
+    transform: translate3d(0, -100%, 0);
+    transition: all @duration @animate;
+  }
+
+  
+  &-bottom-enter {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  &-bottom-enter&-bottom-enter-active  {
+    transform: translate3d(0, 0, 0);
+    transition: all @duration @animate;
+  }
+
+  &-bottom-leave&-bottom-leave-active {
+    transform: translate3d(0, 100%, 0);
+    transition: all @duration @animate;
+  }
+
+  @media (max-width: 414px){
+    width: 100% !important;
+  }
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+ }
+ .clearfix:after { clear:both; }

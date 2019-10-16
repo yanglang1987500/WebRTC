@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "paths": {
+      "@business/*": [
+        "./src/business/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@containers/*": [
+        "./src/containers/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@router/*": [
+        "./src/router/*"
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@http": [
+        "./src/common/utils/http.ts"
+      ],
+      "@mocks/*": [
+        "./__mocks__/*"
+      ]
+    },
+    "lib": [
+      "es5",
+      "es2017",
+      "dom",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "./__mocks__/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

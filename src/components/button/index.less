@@ -1,0 +1,29 @@
+.button_loading {
+    height: 14px;
+    display: inline-block;
+    width: 14px;
+    border: 2px solid #fff;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border-top-color:transparent;
+    border-right-color:transparent;
+    animation:loading 1s linear infinite;
+}
+
+.button_label{
+  margin-left: 5px;
+}
+
+@keyframes loading
+{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes loading /*Safari and Chrome*/
+{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}

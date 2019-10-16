@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bubble test render Bubble default 1`] = `
+<span
+  className="circle-icon-text middle"
+>
+  H
+</span>
+`;

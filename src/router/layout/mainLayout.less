@@ -1,0 +1,35 @@
+@prefix: fade;
+@duration: 250ms;
+
+.transition-group>main {
+  transition: opacity @duration ease;
+}
+
+.@{prefix}-enter {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.@{prefix}-enter.@{prefix}-enter-active {
+    opacity: 1;
+  }
+  
+  .@{prefix}-leave {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+  }
+  
+  .@{prefix}-leave.@{prefix}-leave-active {
+    opacity: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.body_wrapper {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}

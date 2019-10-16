@@ -1,0 +1,11 @@
+node_modules/
+/dist/*
+/.vscode
+!/dist/dll/
+fe-toolkit/*
+*.scssc
+.sass-cache/
+.sass-cache/*
+scripts/*
+coverage/
+coverage/*

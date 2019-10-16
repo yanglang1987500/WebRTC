@@ -1,0 +1,53 @@
+
+
+@prefixCls: ui-full-dialog;
+@duration: 400ms;
+@animate: ease;
+.modal-fullpage {
+  display: block;
+}
+.@{prefixCls} {
+  transition: all ease .4s;
+  z-index: 1050;
+  transform: translate3d(0, 0, 0);
+  &-hidden{
+    display: none;
+  }
+  /*----- animation ------*/
+
+
+  &-enter {
+    .modal-dialog {
+      transform: translate3d(0, -25%, 0);
+    }
+    opacity: 0;
+  }
+
+  &-enter&-enter-active {
+    .modal-dialog {
+      transform: translate3d(0, 0, 0);
+      transition: all @duration @animate;
+    }
+    transition: all @duration @animate;
+    opacity: 1;
+  }
+
+  &-leave&-leave-active {
+    .modal-dialog {
+      transform: translate3d(0, -25%, 0);
+      transition: all @duration @animate;
+    }
+    transition: all @duration @animate;
+    opacity: 0;
+  }
+
+  @media (max-width: 414px){
+    width: 100% !important;
+  }
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+ }
+ .clearfix:after { clear:both; }
