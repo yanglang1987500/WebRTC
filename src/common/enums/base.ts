@@ -5,7 +5,7 @@ export enum Type {
   Object = "Object",
   Array = "Array",
   Function = "Function"
-}
+};
 
 export enum HttpStatusType {
   Continue = 100,
@@ -28,7 +28,7 @@ export enum HttpStatusType {
   Forbidden = 403,
   NotFound = 404,
   InternalServerError = 500
-}
+};
 
 export enum ContentType {
   Image = 1,
@@ -41,4 +41,48 @@ export enum ContentType {
   Ppt = 8,
   Audio = 9,
   Unknow = 10
-}
+};
+
+export enum Events {
+  Join = 'join',
+  Logout = 'logout',
+  RefreshUsers = 'refreshUsers',
+  RefreshMessages = 'refreshMessages',
+  Message = 'message',
+  Call = 'call',
+  Offer = 'offer',
+  Error = 'error',
+  Candidate = 'candidate',
+  Accept = 'accept',
+  Answer = 'answer',
+  Leave = 'leave',
+  StartPrivateMessage = 'startPrivateMessage',
+  EndPrivateMessage = 'endPrivateMessage',
+  SendFile = 'sendFile',
+  AcceptFile = 'acceptFile',
+  UnSupport = 'unSupport',
+};
+
+export enum MediaChatStatus {
+  None = 1,
+  CallIn = 2,
+  Chatting = 3,
+  CallOut = 4,
+};
+
+export interface ITransferFile {
+  file?: File;
+  data?: ArrayBuffer[];
+  totalSize?: number;
+  transferedSize?: number;
+  name?: string;
+  id?: string;
+  progress?: number;
+  status?: TransferStatus;
+};
+
+export enum TransferStatus {
+  Wait = 1,
+  Transfering = 2,
+  Complete = 3
+};

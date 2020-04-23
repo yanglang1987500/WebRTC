@@ -51,6 +51,7 @@
   },
   "include": [
     "./src/**/*",
+    "./server/**/*",
     "./__mocks__/**/*"
   ],
   "exclude": [

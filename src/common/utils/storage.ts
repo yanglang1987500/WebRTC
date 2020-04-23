@@ -2,15 +2,13 @@ import Cookies from 'js-cookie';
 
 export class Localstorage {
   public static read(key: string) {
-    if (window.localStorage) {
-      return window.localStorage[key];
-    }
-    return null;
+    return window.localStorage.getItem(key);
   }
   public static write(key: string, value: any) {
-    if (window.localStorage) {
-      window.localStorage[key] = value;
-    }
+    window.localStorage.setItem(key, value);
+  }
+  public static remove(key: string) {
+    window.localStorage.removeItem(key);
   }
 }
 

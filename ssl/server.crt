@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=cn, ST=cn, L=cn, O=cn, OU=cn, CN=cn/emailAddress=676702008@qq.com
+        Validity
+            Not Before: Nov 12 09:00:29 2019 GMT
+            Not After : Nov 11 09:00:29 2020 GMT
+        Subject: C=cn, ST=cn, O=cn, OU=cn, CN=cn/emailAddress=676702008@qq.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (1024 bit)
+                Modulus:
+                    00:aa:0b:fb:3b:0a:e2:4f:9f:c8:cf:25:30:05:04:
+                    44:df:0d:e7:71:f7:78:a0:38:6a:e8:49:37:b6:dd:
+                    c0:41:3b:df:94:b8:02:12:23:e4:4f:3d:1d:6f:80:
+                    57:59:f3:70:0e:63:61:1c:f2:20:57:3c:a0:2e:2a:
+                    d8:b7:30:35:3a:46:0a:d8:60:78:7f:bb:c5:2a:c8:
+                    06:73:3b:73:44:10:47:1d:ca:45:b8:03:bb:fc:9a:
+                    04:8c:6e:f3:07:47:d8:62:46:e3:22:20:99:3a:f6:
+                    52:3d:fe:bd:19:1e:28:28:2f:10:b7:3a:2e:53:6f:
+                    58:0b:23:e7:54:55:e3:2f:b5
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                D2:72:FB:E2:2F:F7:33:8D:98:E5:E1:05:80:71:DD:AE:29:E0:D4:AD
+            X509v3 Authority Key Identifier: 
+                DirName:/C=cn/ST=cn/L=cn/O=cn/OU=cn/CN=cn/emailAddress=676702008@qq.com
+                serial:72:09:12:1E:9E:1C:C3:6C:8A:09:F6:D8:19:D1:72:DF:BB:02:64:36
+
+    Signature Algorithm: sha256WithRSAEncryption
+         2d:13:05:f2:05:f6:54:77:8f:e9:25:62:05:68:72:8d:93:7b:
+         76:1d:1a:4e:8f:dc:1a:5f:e8:84:59:cc:d5:c3:e2:0e:f2:59:
+         0f:42:f4:bf:ea:68:70:77:83:bd:78:db:e6:10:a0:ac:c7:10:
+         f1:2a:e2:12:59:4c:0a:aa:eb:5a:af:8b:11:36:ae:6e:3c:0f:
+         b1:9c:e8:2c:07:6c:49:04:e1:07:5c:d0:bb:e4:d7:32:4b:f4:
+         fc:42:8f:46:65:90:85:6f:1a:4e:61:0f:4b:64:a8:69:8b:ed:
+         c6:d9:c3:57:03:cb:8a:e7:a2:6e:ed:a2:df:e6:42:7c:0c:4e:
+         81:7b:a4:6a:7f:d0:17:92:d0:eb:50:7f:b5:18:3f:2a:04:e2:
+         00:9c:a7:35:55:d3:3c:a7:37:81:3c:0f:39:0f:a7:3c:93:85:
+         2a:17:15:5c:46:78:36:5e:05:a2:a7:ee:cc:12:b9:6f:24:00:
+         87:05:16:5c:7c:93:82:9e:7b:3b:fc:db:ff:f3:f3:1e:26:c9:
+         d8:64:a2:bb:52:d5:4c:2e:d0:77:5b:6a:54:1c:25:fd:56:46:
+         35:cf:90:17:e6:05:02:b1:96:fc:39:f2:5b:7c:5c:16:8a:a2:
+         ca:5f:57:22:bb:b4:48:3c:ae:bd:82:c5:76:1f:69:18:f6:ec:
+         66:7b:0c:62
+-----BEGIN CERTIFICATE-----
+MIIDvTCCAqWgAwIBAgIBATANBgkqhkiG9w0BAQsFADBvMQswCQYDVQQGEwJjbjEL
+MAkGA1UECAwCY24xCzAJBgNVBAcMAmNuMQswCQYDVQQKDAJjbjELMAkGA1UECwwC
+Y24xCzAJBgNVBAMMAmNuMR8wHQYJKoZIhvcNAQkBFhA2NzY3MDIwMDhAcXEuY29t
+MB4XDTE5MTExMjA5MDAyOVoXDTIwMTExMTA5MDAyOVowYjELMAkGA1UEBhMCY24x
+CzAJBgNVBAgMAmNuMQswCQYDVQQKDAJjbjELMAkGA1UECwwCY24xCzAJBgNVBAMM
+AmNuMR8wHQYJKoZIhvcNAQkBFhA2NzY3MDIwMDhAcXEuY29tMIGfMA0GCSqGSIb3
+DQEBAQUAA4GNADCBiQKBgQCqC/s7CuJPn8jPJTAFBETfDedx93igOGroSTe23cBB
+O9+UuAISI+RPPR1vgFdZ83AOY2Ec8iBXPKAuKti3MDU6RgrYYHh/u8UqyAZzO3NE
+EEcdykW4A7v8mgSMbvMHR9hiRuMiIJk69lI9/r0ZHigoLxC3Oi5Tb1gLI+dUVeMv
+tQIDAQABo4H0MIHxMAkGA1UdEwQCMAAwLAYJYIZIAYb4QgENBB8WHU9wZW5TU0wg
+R2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBTScvviL/czjZjl4QWAcd2u
+KeDUrTCBlgYDVR0jBIGOMIGLoXOkcTBvMQswCQYDVQQGEwJjbjELMAkGA1UECAwC
+Y24xCzAJBgNVBAcMAmNuMQswCQYDVQQKDAJjbjELMAkGA1UECwwCY24xCzAJBgNV
+BAMMAmNuMR8wHQYJKoZIhvcNAQkBFhA2NzY3MDIwMDhAcXEuY29tghRyCRIenhzD
+bIoJ9tgZ0XLfuwJkNjANBgkqhkiG9w0BAQsFAAOCAQEALRMF8gX2VHeP6SViBWhy
+jZN7dh0aTo/cGl/ohFnM1cPiDvJZD0L0v+pocHeDvXjb5hCgrMcQ8SriEllMCqrr
+Wq+LETaubjwPsZzoLAdsSQThB1zQu+TXMkv0/EKPRmWQhW8aTmEPS2SoaYvtxtnD
+VwPLiueibu2i3+ZCfAxOgXukan/QF5LQ61B/tRg/KgTiAJynNVXTPKc3gTwPOQ+n
+PJOFKhcVXEZ4Nl4FoqfuzBK5byQAhwUWXHyTgp57O/zb//PzHibJ2GSiu1LVTC7Q
+d1tqVBwl/VZGNc+QF+YFArGW/DnyW3xcFoqiyl9XIru0SDyuvYLFdh9pGPbsZnsM
+Yg==
+-----END CERTIFICATE-----

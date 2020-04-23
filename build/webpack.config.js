@@ -6,21 +6,14 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = (env, options) => {
   const isDevelopment = options.mode === "development";
-  const publicPath = isDevelopment ? "" : "/scripts/react/";
+  const publicPath = "" ;
   console.log(options.mode, isDevelopment);
   return {
     devServer: {
       contentBase: path.join(__dirname, "../dist"),
-      host: "localhost",
+      host: "0.0.0.0",
       compress: true,
       port: 8085,
-      proxy: {
-        "/api": {
-          target: "https://localhost:44377/",
-          // changeOrigin: true,     // target是域名的话，需要这个参数，
-          secure: false // 设置支持https协议的代理
-        }
-      }
     },
     context: path.join(__dirname, "../src"),
     resolve: {

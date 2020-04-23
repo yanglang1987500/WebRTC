@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import './index.less';
 
 const Spin = (props: ISpinProps) => {
   const { strokeWidth = 3, width = 50, className, style = {}, color } = props;

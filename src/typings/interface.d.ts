@@ -32,3 +32,43 @@ interface IAttachment {
   width?: number;
   height?: number;
 }
+
+interface IWebSocketMessage<T=any> {
+  event: string;
+  users?: IUser[];
+  id?: string;
+  name?: string;
+  to?: string;
+  sender?: string;
+  receiver?: string;
+  messages?: T;
+  content?: string;
+  error?: any;
+  candidate?: any;
+  accept?: boolean;
+  offer?: any;
+  answer?: any;
+  isVideo?: boolean;
+
+  fileId?: string;
+  fileName?: string;
+  totalSize?: number;
+  type?: rtcType
+}
+
+type rtcType = 'media' | 'file' | 'message';
+
+interface IUser {
+  name: string;
+  id: string;
+}
+
+interface Window {
+  promptManager: {
+    show: Function;
+    showWrongInfo: (msg: string) => void;
+  };
+  ActiveXObject: (type?: string) => void;
+  WebuiPopovers: IKeyValueMap;
+}
+

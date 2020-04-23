@@ -4,7 +4,7 @@ import Animate from 'rc-animate';
 import LazyRenderBox from './lazyRenderBox';
 import DialogWrap from './dialogWrap';
 import classnames from 'classnames';
-import './SideDialog.less';
+import './sideDialog.less';
 
 /**
  *  class SideDialog 侧边对话框，基于BaseDialog实现，用于提供左，右，上，下浮出边框提供内容浏览

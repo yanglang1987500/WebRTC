@@ -1,0 +1,88 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Type;
+(function (Type) {
+    Type["Number"] = "Number";
+    Type["String"] = "String";
+    Type["Boolean"] = "Boolean";
+    Type["Object"] = "Object";
+    Type["Array"] = "Array";
+    Type["Function"] = "Function";
+})(Type = exports.Type || (exports.Type = {}));
+;
+var HttpStatusType;
+(function (HttpStatusType) {
+    HttpStatusType[HttpStatusType["Continue"] = 100] = "Continue";
+    HttpStatusType[HttpStatusType["SwitchingProtocol"] = 101] = "SwitchingProtocol";
+    HttpStatusType[HttpStatusType["Processing"] = 102] = "Processing";
+    HttpStatusType[HttpStatusType["OK"] = 200] = "OK";
+    HttpStatusType[HttpStatusType["Created"] = 201] = "Created";
+    HttpStatusType[HttpStatusType["Accepted"] = 202] = "Accepted";
+    HttpStatusType[HttpStatusType["NonAuthoritativeInformation"] = 203] = "NonAuthoritativeInformation";
+    HttpStatusType[HttpStatusType["NoContent"] = 204] = "NoContent";
+    HttpStatusType[HttpStatusType["ResetContent"] = 205] = "ResetContent";
+    HttpStatusType[HttpStatusType["PartialContent"] = 206] = "PartialContent";
+    HttpStatusType[HttpStatusType["MultipleChoice"] = 300] = "MultipleChoice";
+    HttpStatusType[HttpStatusType["MovedPermanently"] = 301] = "MovedPermanently";
+    HttpStatusType[HttpStatusType["Found"] = 302] = "Found";
+    HttpStatusType[HttpStatusType["SeeOther"] = 303] = "SeeOther";
+    HttpStatusType[HttpStatusType["NotModified"] = 304] = "NotModified";
+    HttpStatusType[HttpStatusType["BadRequest"] = 400] = "BadRequest";
+    HttpStatusType[HttpStatusType["Unauthorized"] = 401] = "Unauthorized";
+    HttpStatusType[HttpStatusType["Forbidden"] = 403] = "Forbidden";
+    HttpStatusType[HttpStatusType["NotFound"] = 404] = "NotFound";
+    HttpStatusType[HttpStatusType["InternalServerError"] = 500] = "InternalServerError";
+})(HttpStatusType = exports.HttpStatusType || (exports.HttpStatusType = {}));
+;
+var ContentType;
+(function (ContentType) {
+    ContentType[ContentType["Image"] = 1] = "Image";
+    ContentType[ContentType["Word"] = 2] = "Word";
+    ContentType[ContentType["Excel"] = 3] = "Excel";
+    ContentType[ContentType["Pdf"] = 4] = "Pdf";
+    ContentType[ContentType["Video"] = 5] = "Video";
+    ContentType[ContentType["Message"] = 6] = "Message";
+    ContentType[ContentType["Email"] = 7] = "Email";
+    ContentType[ContentType["Ppt"] = 8] = "Ppt";
+    ContentType[ContentType["Audio"] = 9] = "Audio";
+    ContentType[ContentType["Unknow"] = 10] = "Unknow";
+})(ContentType = exports.ContentType || (exports.ContentType = {}));
+;
+var Events;
+(function (Events) {
+    Events["Join"] = "join";
+    Events["Logout"] = "logout";
+    Events["RefreshUsers"] = "refreshUsers";
+    Events["RefreshMessages"] = "refreshMessages";
+    Events["Message"] = "message";
+    Events["Call"] = "call";
+    Events["Offer"] = "offer";
+    Events["Error"] = "error";
+    Events["Candidate"] = "candidate";
+    Events["Accept"] = "accept";
+    Events["Answer"] = "answer";
+    Events["Leave"] = "leave";
+    Events["StartPrivateMessage"] = "startPrivateMessage";
+    Events["EndPrivateMessage"] = "endPrivateMessage";
+    Events["SendFile"] = "sendFile";
+    Events["AcceptFile"] = "acceptFile";
+    Events["UnSupport"] = "unSupport";
+})(Events = exports.Events || (exports.Events = {}));
+;
+var MediaChatStatus;
+(function (MediaChatStatus) {
+    MediaChatStatus[MediaChatStatus["None"] = 1] = "None";
+    MediaChatStatus[MediaChatStatus["CallIn"] = 2] = "CallIn";
+    MediaChatStatus[MediaChatStatus["Chatting"] = 3] = "Chatting";
+    MediaChatStatus[MediaChatStatus["CallOut"] = 4] = "CallOut";
+})(MediaChatStatus = exports.MediaChatStatus || (exports.MediaChatStatus = {}));
+;
+;
+var TransferStatus;
+(function (TransferStatus) {
+    TransferStatus[TransferStatus["Wait"] = 1] = "Wait";
+    TransferStatus[TransferStatus["Transfering"] = 2] = "Transfering";
+    TransferStatus[TransferStatus["Complete"] = 3] = "Complete";
+})(TransferStatus = exports.TransferStatus || (exports.TransferStatus = {}));
+;
+//# sourceMappingURL=base.js.map

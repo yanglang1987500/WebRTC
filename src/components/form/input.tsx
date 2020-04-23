@@ -15,14 +15,15 @@ class Input extends React.Component<IInputProps, IInputStates> {
   }
 
   render() {
-    const { value, onChange, error, required, placeholder, className, style, prop } = this.props;
+    const { value, onChange, error, required, placeholder, className, style, prop,  } = this.props;
     return <div className={classnames("form-group")} ref={dom => this.container = dom}>
       <input
+        {...this.props}
         id={prop}
         type="text"
         style={style}
         value={value}
-        onChange={e => onChange(e.target.value)}
+        onChange={onChange}
         required={required}
         placeholder={placeholder}
         className={classnames('form-control', className, error ? 'mb-2' : 'mb-4')}
@@ -33,9 +34,8 @@ class Input extends React.Component<IInputProps, IInputStates> {
   }
 }
 
-interface IInputProps {
+interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   value?: string | number;
-  onChange?: (value: string) => void;
   error?: string;
   required?: boolean;
   placeholder?: string;

@@ -2,8 +2,8 @@ import React from "react";
 import { Switch, Route, Redirect, RouteComponentProps } from "react-router-dom";
 import { mainRouterList } from "./config";
 import { inject } from "mobx-react";
-import "./mainLayout.less";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
+import { PromptManager } from "@components";
 
 class MainLayout extends React.Component<IMainLayoutProps, IMainLayoutStates> {
 
@@ -16,22 +16,13 @@ class MainLayout extends React.Component<IMainLayoutProps, IMainLayoutStates> {
     const { location } = this.props;
     return (
       <div className="body_wrapper">
-        <CSSTransitionGroup
-          component="div"
-          className="transition-group"
-          transitionName={`fade`}
-          transitionEnter={true}
-          transitionLeave={true}
-          transitionEnterTimeout={250}
-          transitionLeaveTimeout={250}
-        >
           <Switch key={location.pathname} location={location}>
             {mainRouterList.map(config => (
               <Route exact key={config.path} path={config.path} component={config.component} title={config.title} />
             ))}
             <Route key="unmatch" component={() => <Redirect to="/" />} />
           </Switch>
-        </CSSTransitionGroup>
+        <PromptManager />
       </div>
     );
   }

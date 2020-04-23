@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import "./GroupInput.less";
+import "./groupInput.less";
 
 export default class GroupInput extends React.Component<IGroupInputProps, {}> {
   dom: HTMLInputElement;

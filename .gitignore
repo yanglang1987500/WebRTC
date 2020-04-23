@@ -9,3 +9,5 @@ fe-toolkit/*
 scripts/*
 coverage/
 coverage/*
+*.zip
+*.7z
